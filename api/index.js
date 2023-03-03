@@ -10,7 +10,7 @@ app.use((req, res, next) => {
     next();
 });
 //route
-    app.get("/", (req,res)=> {
+    app.get("/api/avita", (req,res)=> {
         res.send("avita");
     });
 
