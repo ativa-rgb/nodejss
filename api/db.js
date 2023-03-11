@@ -1,15 +1,16 @@
-import  pkg  from "pg";
+import pkg from "pg";
 
 const { Client } = pkg;
 
 export const client = new Client({
-    // host: "localhost",
+    host: "db.jfnbgkgxeprwphkcylcd.supabase.co",
     user: "postgres",
-    password: "kalimantan",
-    database: "integer",
+    password: "kalimantan28pub.",
+    database: "postgres",
     // port: 5432
 
 });
 
 await client.connect();
+console.log("database terhubung");
 
